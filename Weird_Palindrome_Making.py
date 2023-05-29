@@ -5,13 +5,17 @@ for i in range(0,t):
     if n==1:
         print(0)
     else:
-        v=[]
+        b=[]
         for i in a:
-            if i in range(1,100000000,2):
-                v.append(i)
-        if len(v)==1:
+            if i in range(1,10000000,2):
+                b.append(i)
+        if len(b)==1:
+            
             print(0)
-        elif len(v)%2==0:
-            print(int(len(v)/2))
+        elif len(b)%2==0:
+            
+            print(int(len(b)/2))
         else:
-            print(int((len(v)-1)/2))
+            print(int((len(b)-1)/2))
+                    
+                
