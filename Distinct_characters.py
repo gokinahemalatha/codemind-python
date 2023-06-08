@@ -1,9 +1,11 @@
-a=list(map(str,input().lower().split()))
-j=''.join(a)
-l=[]
-for i in j:
-    if j.count(i)==1:
-        l.append(i)
-q=sorted(l)
-x=''.join(q)
-print(x)
+s=input()
+s=s.lower()
+b=[]
+for i in s:
+    if i==' ':
+        continue
+    if ord(i) not in b:
+        b.append(ord(i))
+b.sort()
+for i in b:
+    print(chr(i),end='')
